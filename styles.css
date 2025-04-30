@@ -1,0 +1,41 @@
+.chat-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  z-index: 9999;
+  padding: 15px;
+}
+
+.message-area {
+  height: 300px;
+  overflow-y: auto;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.message {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.message.user {
+  background: #e3f2fd;
+  text-align: right;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+}
+
+textarea {
+  flex: 1;
+  resize: vertical;
+}

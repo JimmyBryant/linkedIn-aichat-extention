@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn AI Chat",
+  "version": "1.1",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+    "*://*.linkedin.com/*",
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/in/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

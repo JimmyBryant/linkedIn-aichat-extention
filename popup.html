@@ -1,0 +1,43 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <style>
+    body {
+      width: 220px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .status {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+      height: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="input-group">
+    <input 
+      type="password" 
+      id="apiKey" 
+      placeholder="Enter OpenAI API Key"
+      autocomplete="off"
+    >
+    <div class="status" id="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
